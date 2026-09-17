@@ -1,7 +1,10 @@
 import axios from 'axios';
 
+// In production, use relative '/api' or VITE_API_URL environment variable; fallback to localhost in development
+const baseURL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '/api' : 'http://localhost:5000/api');
+
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -28,7 +31,7 @@ api.interceptors.response.use(
   (error) => {
     if (error.response && error.response.status === 401) {
       // Don't auto-redirect if checking /api/auth/me during initial boot
-      const isAuthMe = error.config.url.includes('/auth/me');
+      const isAuthMe = error.config.url && error.config.url.includes('/auth/me');
       if (!isAuthMe) {
         localStorage.removeItem('carewave_token');
         localStorage.removeItem('carewave_user');

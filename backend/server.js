@@ -11,13 +11,34 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Core Middleware
+// Enable CORS for all origins in development and production (e.g. *.vercel.app)
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173', 'http://localhost:3000'],
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Lazily ensure DB and seed data are initialized (supports both local server and Vercel serverless)
+let initPromise = null;
+const ensureInitialized = async () => {
+  if (!initPromise) {
+    initPromise = (async () => {
+      try {
+        await connectDB();
+        await seedData();
+      } catch (err) {
+        console.error('[CareWave Init Error]:', err.message);
+      }
+    })();
+  }
+  return initPromise;
+};
+
+app.use(async (req, res, next) => {
+  await ensureInitialized();
+  next();
+});
 
 // Health Check
 app.get('/api/health', (req, res) => {
@@ -35,20 +56,16 @@ app.use('/api/hospitals', require('./routes/hospitalRoutes'));
 app.use('/api/appointments', require('./routes/appointmentRoutes'));
 app.use('/api/queue', require('./routes/queueRoutes'));
 app.use('/api/notifications', require('./routes/notificationRoutes'));
-app.use('/api/stats', require('./routes/notificationRoutes')); // Alias for /api/stats/stats
+app.use('/api/stats', require('./routes/notificationRoutes'));
 
 // 404 & Error Handler
 app.use(notFound);
 app.use(errorHandler);
 
-// Bootstrap Server & Database
+// Bootstrap Server if running directly (local or non-serverless container)
 const startServer = async () => {
   try {
-    // Attempt DB connection (with built-in fallback)
-    await connectDB();
-    
-    // Auto-seed sample Indian hospitals, demo doctors, and test patient account
-    await seedData();
+    await ensureInitialized();
 
     app.listen(PORT, () => {
       console.log('====================================================');
@@ -63,4 +80,8 @@ const startServer = async () => {
   }
 };
 
-startServer();
+if (!process.env.VERCEL && process.env.NODE_ENV !== 'test') {
+  startServer();
+}
+
+module.exports = app;
