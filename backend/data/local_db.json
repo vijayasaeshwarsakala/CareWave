@@ -1,0 +1,881 @@
+{
+  "users": [
+    {
+      "_id": "user-demo-patient",
+      "name": "Rahul Sharma",
+      "email": "rahul.patient@carewave.in",
+      "phone": "+91 98765 43210",
+      "password": "$2a$10$HEaTcKOaiaEythg53.05Ye4JBHXH4Ek4ENHnZJ6Ufp2k5GHweiThK",
+      "role": "patient",
+      "city": "Hyderabad",
+      "createdAt": "2026-09-17T04:09:28.514Z"
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "hosp-apollo-hyd",
+      "name": "Apollo Hospitals, Jubilee Hills",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "address": "Road No. 72, Opposite Bharatiya Vidya Bhavan, Film Nagar, Jubilee Hills, Hyderabad - 500033",
+      "phone": "+91 40 2360 7777",
+      "type": "Super-Specialty Private",
+      "rating": 4.8,
+      "timings": "24x7 Emergency | OPD: 08:00 AM - 08:00 PM",
+      "totalBeds": 550,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "General Medicine",
+        "Orthopedics",
+        "Pediatrics",
+        "Dermatology",
+        "Oncology"
+      ],
+      "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-apollo-blr",
+      "name": "Apollo Hospitals, Bannerghatta Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "154/11, Opposite IIMB, Bannerghatta Main Road, Krishnaraju Layout, Amalodbhavi Nagar, Panduranga Nagar, Bengaluru - 560076",
+      "phone": "+91 80 2630 4050",
+      "type": "Super-Specialty Private",
+      "rating": 4.7,
+      "timings": "24x7 Emergency | OPD: 08:30 AM - 07:30 PM",
+      "totalBeds": 250,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "General Medicine",
+        "Neurology",
+        "Orthopedics",
+        "Pediatrics",
+        "Oncology"
+      ],
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-apollo-chn",
+      "name": "Apollo Hospitals, Greams Road",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "address": "21, Greams Lane, Off Greams Road, Thousand Lights West, Thousand Lights, Chennai - 600006",
+      "phone": "+91 44 2829 0200",
+      "type": "Super-Specialty Private",
+      "rating": 4.9,
+      "timings": "24x7 Emergency | OPD: 08:00 AM - 08:00 PM",
+      "totalBeds": 600,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "General Medicine",
+        "Orthopedics",
+        "Dermatology",
+        "Pediatrics"
+      ],
+      "image": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-aiims-del",
+      "name": "AIIMS (All India Institute of Medical Sciences)",
+      "city": "Delhi",
+      "state": "Delhi",
+      "address": "Sri Aurobindo Marg, Ansari Nagar, Ansari Nagar East, New Delhi - 110029",
+      "phone": "+91 11 2658 8500",
+      "type": "Apex Government Premier Institute",
+      "rating": 4.9,
+      "timings": "24x7 Emergency | OPD: 08:00 AM - 04:00 PM",
+      "totalBeds": 2400,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "General Medicine",
+        "Orthopedics",
+        "Pediatrics",
+        "Dermatology",
+        "Oncology"
+      ],
+      "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-aiims-hyd",
+      "name": "AIIMS Bibinagar",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "address": "NH 163, Rangapur, Bibinagar, Telangana - 508126 (Near Hyderabad Outskirts)",
+      "phone": "+91 86 8527 9904",
+      "type": "Apex Government Premier Institute",
+      "rating": 4.6,
+      "timings": "24x7 Emergency | OPD: 08:30 AM - 04:30 PM",
+      "totalBeds": 750,
+      "emergencyAvailable": true,
+      "departments": [
+        "General Medicine",
+        "Cardiology",
+        "Neurology",
+        "Pediatrics",
+        "Orthopedics"
+      ],
+      "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-fortis-blr",
+      "name": "Fortis Hospital, Bannerghatta Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "154/9, Bannerghatta Main Road, Opposite IIM-B, Sahyadri Layout, Panduranga Nagar, Bengaluru - 560076",
+      "phone": "+91 80 6621 4444",
+      "type": "Multi-Specialty Private",
+      "rating": 4.7,
+      "timings": "24x7 Emergency | OPD: 08:00 AM - 08:00 PM",
+      "totalBeds": 400,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "Orthopedics",
+        "General Medicine",
+        "Dermatology"
+      ],
+      "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-fortis-del",
+      "name": "Fortis Flt. Lt. Rajan Dhall Hospital",
+      "city": "Delhi",
+      "state": "Delhi",
+      "address": "Sector B, Pocket 1, Aruna Asaf Ali Marg, Vasant Kunj, New Delhi - 110070",
+      "phone": "+91 11 4277 6222",
+      "type": "Multi-Specialty Private",
+      "rating": 4.6,
+      "timings": "24x7 Emergency | OPD: 09:00 AM - 07:00 PM",
+      "totalBeds": 200,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Orthopedics",
+        "General Medicine",
+        "Pediatrics",
+        "Neurology"
+      ],
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-manipal-blr",
+      "name": "Manipal Hospital, Old Airport Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "98, HAL Old Airport Road, Kodihalli, Bengaluru - 560017",
+      "phone": "+91 80 2502 4444",
+      "type": "Quaternary Care Hospital",
+      "rating": 4.8,
+      "timings": "24x7 Emergency | OPD: 08:00 AM - 08:30 PM",
+      "totalBeds": 600,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "Orthopedics",
+        "General Medicine",
+        "Pediatrics",
+        "Dermatology"
+      ],
+      "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-kims-hyd",
+      "name": "KIMS Hospitals, Secunderabad",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "address": "1-8-31/1, Minister Road, Krishna Nagar Colony, Begumpet, Secunderabad - 500003",
+      "phone": "+91 40 4488 5000",
+      "type": "Super-Specialty Private",
+      "rating": 4.7,
+      "timings": "24x7 Emergency | OPD: 08:30 AM - 08:00 PM",
+      "totalBeds": 1000,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "General Medicine",
+        "Orthopedics",
+        "Pediatrics"
+      ],
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-yashoda-hyd",
+      "name": "Yashoda Hospitals, Somajiguda",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "address": "Raj Bhavan Road, Matha Nagar, Somajiguda, Hyderabad - 500082",
+      "phone": "+91 40 4567 4567",
+      "type": "Super-Specialty Private",
+      "rating": 4.8,
+      "timings": "24x7 Emergency | OPD: 08:00 AM - 08:00 PM",
+      "totalBeds": 500,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "Orthopedics",
+        "General Medicine",
+        "Dermatology",
+        "Pediatrics"
+      ],
+      "image": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-care-hyd",
+      "name": "CARE Hospitals, Banjara Hills",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "address": "Road No. 1, Prem Nagar, Banjara Hills, Hyderabad - 500034",
+      "phone": "+91 40 6165 6565",
+      "type": "Multi-Specialty Private",
+      "rating": 4.6,
+      "timings": "24x7 Emergency | OPD: 08:30 AM - 07:30 PM",
+      "totalBeds": 435,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "General Medicine",
+        "Orthopedics",
+        "Pediatrics"
+      ],
+      "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hosp-narayana-blr",
+      "name": "Narayana Health City",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "address": "258/A, Bommasandra Industrial Area, Anekal Taluk, Hosur Road, Bengaluru - 560099",
+      "phone": "+91 80 7122 2222",
+      "type": "Super-Specialty Cardiac & Multi-Specialty",
+      "rating": 4.8,
+      "timings": "24x7 Emergency | OPD: 08:00 AM - 07:00 PM",
+      "totalBeds": 1400,
+      "emergencyAvailable": true,
+      "departments": [
+        "Cardiology",
+        "Neurology",
+        "Orthopedics",
+        "General Medicine",
+        "Pediatrics",
+        "Oncology"
+      ],
+      "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc-1",
+      "name": "Dr. Priya Sharma",
+      "hospitalId": "hosp-apollo-hyd",
+      "department": "General Medicine",
+      "qualification": "MBBS, MD (General Medicine)",
+      "experienceYears": 12,
+      "consultationFee": 800,
+      "rating": 4.9,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "09:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "02:00 PM",
+        "03:00 PM",
+        "04:30 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-2",
+      "name": "Dr. Rajesh Varma",
+      "hospitalId": "hosp-apollo-hyd",
+      "department": "Cardiology",
+      "qualification": "MBBS, MD, DM (Cardiology), FACC",
+      "experienceYears": 18,
+      "consultationFee": 1200,
+      "rating": 4.9,
+      "availableDays": [
+        "Monday",
+        "Wednesday",
+        "Friday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "10:00 AM",
+        "10:30 AM",
+        "11:00 AM",
+        "11:30 AM",
+        "03:00 PM",
+        "03:30 PM",
+        "04:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-3",
+      "name": "Dr. Sneha Reddy",
+      "hospitalId": "hosp-apollo-hyd",
+      "department": "Neurology",
+      "qualification": "MBBS, MD, DM (Neurology)",
+      "experienceYears": 11,
+      "consultationFee": 1100,
+      "rating": 4.8,
+      "availableDays": [
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:30 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "02:30 PM",
+        "03:30 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-4",
+      "name": "Dr. K. Srinivas Rao",
+      "hospitalId": "hosp-apollo-hyd",
+      "department": "Orthopedics",
+      "qualification": "MBBS, MS (Orthopedics), MCh",
+      "experienceYears": 15,
+      "consultationFee": 1000,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "10:00 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "02:00 PM",
+        "03:00 PM",
+        "04:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-5",
+      "name": "Dr. Ananya Iyer",
+      "hospitalId": "hosp-apollo-blr",
+      "department": "Cardiology",
+      "qualification": "MBBS, MD, DNB (Cardiology)",
+      "experienceYears": 14,
+      "consultationFee": 1100,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "09:30 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "02:00 PM",
+        "03:30 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-6",
+      "name": "Dr. Karthik Venkatesh",
+      "hospitalId": "hosp-apollo-blr",
+      "department": "General Medicine",
+      "qualification": "MBBS, MD (Internal Medicine)",
+      "experienceYears": 9,
+      "consultationFee": 750,
+      "rating": 4.7,
+      "availableDays": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+        "02:00 PM",
+        "03:00 PM",
+        "04:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-7",
+      "name": "Dr. Deepa Krishnan",
+      "hospitalId": "hosp-apollo-chn",
+      "department": "Cardiology",
+      "qualification": "MBBS, MD, DM (Cardiology)",
+      "experienceYears": 16,
+      "consultationFee": 1200,
+      "rating": 4.9,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "02:30 PM",
+        "03:30 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-8",
+      "name": "Dr. Meenakshi Sundaram",
+      "hospitalId": "hosp-apollo-chn",
+      "department": "General Medicine",
+      "qualification": "MBBS, MD (General Medicine)",
+      "experienceYears": 13,
+      "consultationFee": 800,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "09:30 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "03:00 PM",
+        "04:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-9",
+      "name": "Dr. Arun Kumar Singh",
+      "hospitalId": "hosp-aiims-del",
+      "department": "Cardiology",
+      "qualification": "MBBS, MD, DM, Senior Consultant",
+      "experienceYears": 20,
+      "consultationFee": 500,
+      "rating": 4.9,
+      "availableDays": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "08:30 AM",
+        "09:00 AM",
+        "09:30 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "01:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-10",
+      "name": "Dr. Harish Chandra",
+      "hospitalId": "hosp-aiims-del",
+      "department": "Neurology",
+      "qualification": "MBBS, MD, DM (Neurology), Professor",
+      "experienceYears": 22,
+      "consultationFee": 500,
+      "rating": 4.9,
+      "availableDays": [
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "09:45 AM",
+        "10:30 AM",
+        "11:15 AM",
+        "01:30 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-11",
+      "name": "Dr. Pooja Batra",
+      "hospitalId": "hosp-aiims-del",
+      "department": "General Medicine",
+      "qualification": "MBBS, MD (Internal Medicine)",
+      "experienceYears": 11,
+      "consultationFee": 500,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "08:30 AM",
+        "09:15 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "01:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-12",
+      "name": "Dr. Swati Deshmukh",
+      "hospitalId": "hosp-aiims-hyd",
+      "department": "Pediatrics",
+      "qualification": "MBBS, DCH, DNB (Pediatrics)",
+      "experienceYears": 10,
+      "consultationFee": 500,
+      "rating": 4.7,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "01:30 PM",
+        "02:30 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-13",
+      "name": "Dr. Anand Kulkarni",
+      "hospitalId": "hosp-aiims-hyd",
+      "department": "General Medicine",
+      "qualification": "MBBS, MD (General Medicine)",
+      "experienceYears": 12,
+      "consultationFee": 500,
+      "rating": 4.7,
+      "availableDays": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "09:30 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "02:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-14",
+      "name": "Dr. Rohit Bansal",
+      "hospitalId": "hosp-fortis-del",
+      "department": "Orthopedics",
+      "qualification": "MBBS, MS (Orthopedics), Joint Replacement Specialist",
+      "experienceYears": 17,
+      "consultationFee": 1200,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "10:00 AM",
+        "10:45 AM",
+        "11:30 AM",
+        "03:00 PM",
+        "04:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-15",
+      "name": "Dr. Ananya Sen",
+      "hospitalId": "hosp-fortis-blr",
+      "department": "Dermatology",
+      "qualification": "MBBS, MD (Dermatology), Fellow Cosmetology",
+      "experienceYears": 8,
+      "consultationFee": 900,
+      "rating": 4.7,
+      "availableDays": [
+        "Tuesday",
+        "Wednesday",
+        "Friday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "10:00 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "02:00 PM",
+        "03:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-16",
+      "name": "Dr. Kavita Nair",
+      "hospitalId": "hosp-manipal-blr",
+      "department": "Pediatrics",
+      "qualification": "MBBS, MD (Pediatrics), Fellowship Neonatology",
+      "experienceYears": 12,
+      "consultationFee": 950,
+      "rating": 4.9,
+      "availableDays": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "09:30 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "03:30 PM",
+        "04:30 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-17",
+      "name": "Dr. Suresh Menon",
+      "hospitalId": "hosp-kims-hyd",
+      "department": "General Medicine",
+      "qualification": "MBBS, MD, FICP",
+      "experienceYears": 15,
+      "consultationFee": 850,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "09:30 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "02:00 PM",
+        "03:00 PM",
+        "04:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-18",
+      "name": "Dr. Vikramaditya Rao",
+      "hospitalId": "hosp-narayana-blr",
+      "department": "Cardiology",
+      "qualification": "MBBS, MD, MCh (Cardio-Thoracic)",
+      "experienceYears": 22,
+      "consultationFee": 1100,
+      "rating": 4.9,
+      "availableDays": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "02:00 PM",
+        "03:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-19",
+      "name": "Dr. Mohammed Farhan",
+      "hospitalId": "hosp-care-hyd",
+      "department": "Neurology",
+      "qualification": "MBBS, MD, DM (Neurology)",
+      "experienceYears": 13,
+      "consultationFee": 1000,
+      "rating": 4.7,
+      "availableDays": [
+        "Monday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "timeSlots": [
+        "10:00 AM",
+        "11:00 AM",
+        "11:30 AM",
+        "03:00 PM",
+        "04:00 PM"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "doc-20",
+      "name": "Dr. Radhika Chennapragada",
+      "hospitalId": "hosp-yashoda-hyd",
+      "department": "Cardiology",
+      "qualification": "MBBS, MD, DM (Cardiology)",
+      "experienceYears": 14,
+      "consultationFee": 1050,
+      "rating": 4.8,
+      "availableDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "timeSlots": [
+        "09:30 AM",
+        "10:30 AM",
+        "11:30 AM",
+        "02:30 PM",
+        "03:30 PM"
+      ],
+      "isDemo": true
+    }
+  ],
+  "appointments": [
+    {
+      "_id": "appt-1789618931572-710",
+      "appointmentCode": "CW-BEN-3276",
+      "userId": "user-demo-patient",
+      "userName": "Rahul Sharma",
+      "userPhone": "+91 98765 43210",
+      "hospitalId": "hosp-manipal-blr",
+      "hospitalName": "Manipal Hospital, Old Airport Road",
+      "doctorId": "doc-16",
+      "doctorName": "Dr. Kavita Nair",
+      "department": "Pediatrics",
+      "appointmentDate": "2026-09-22",
+      "timeSlot": "04:30 PM",
+      "status": "CANCELLED",
+      "reason": "Routine Consultation & General Health Checkup",
+      "queueId": "queue-1789618931572-903",
+      "createdAt": "2026-09-17T04:22:11.572Z"
+    },
+    {
+      "_id": "appt-demo-1",
+      "appointmentCode": "CW-HYD-1029",
+      "userId": "user-demo-patient",
+      "userName": "Rahul Sharma",
+      "userPhone": "+91 98765 43210",
+      "hospitalId": "hosp-apollo-hyd",
+      "hospitalName": "Apollo Hospitals, Jubilee Hills",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Priya Sharma",
+      "department": "General Medicine",
+      "appointmentDate": "2026-09-17",
+      "timeSlot": "10:30 AM",
+      "status": "CONFIRMED",
+      "reason": "Periodic Health Checkup & BP Review",
+      "queueId": "queue-demo-1",
+      "createdAt": "2026-09-17T04:09:28.515Z"
+    }
+  ],
+  "queues": [
+    {
+      "_id": "queue-1789618931572-903",
+      "appointmentId": "appt-1789618931572-710",
+      "hospitalId": "hosp-manipal-blr",
+      "doctorId": "doc-16",
+      "tokenNumber": "D-36",
+      "currentlyServing": "D-32",
+      "peopleAhead": 4,
+      "avgConsultationMinutes": 10,
+      "estimatedWaitMinutes": 40,
+      "status": "WAITING",
+      "counterRoom": "Room 110 (OPD Wing)",
+      "lastUpdated": "2026-09-17T04:22:11.572Z"
+    },
+    {
+      "_id": "queue-demo-1",
+      "appointmentId": "appt-demo-1",
+      "hospitalId": "hosp-apollo-hyd",
+      "doctorId": "doc-1",
+      "tokenNumber": "A-12",
+      "currentlyServing": "A-09",
+      "peopleAhead": 3,
+      "estimatedWaitMinutes": 30,
+      "avgConsultationMinutes": 10,
+      "status": "WAITING",
+      "counterRoom": "Room 204 (OPD Block A)",
+      "lastUpdated": "2026-09-17T04:10:32.864Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif-1789618965665-683",
+      "userId": "user-demo-patient",
+      "title": "Appointment Cancelled",
+      "message": "Your appointment CW-BEN-3276 has been cancelled.",
+      "type": "APPOINTMENT_CANCELLED",
+      "isRead": false,
+      "createdAt": "2026-09-17T04:22:45.665Z"
+    },
+    {
+      "_id": "notif-1789618931572-122",
+      "userId": "user-demo-patient",
+      "title": "Appointment Booked Successfully",
+      "message": "Your appointment with Dr. Kavita Nair at Manipal Hospital, Old Airport Road is confirmed for 2026-09-22 at 04:30 PM. Token: D-36",
+      "type": "APPOINTMENT_CONFIRMED",
+      "isRead": true,
+      "link": "/queue/appt-1789618931572-710",
+      "createdAt": "2026-09-17T04:22:11.572Z"
+    },
+    {
+      "_id": "notif-demo-1",
+      "userId": "user-demo-patient",
+      "title": "Appointment Confirmed",
+      "message": "Your appointment with Dr. Priya Sharma at Apollo Hospitals is confirmed for today at 10:30 AM.",
+      "type": "APPOINTMENT_CONFIRMED",
+      "isRead": false,
+      "link": "/queue/appt-demo-1",
+      "createdAt": "2026-09-17T04:09:28.515Z"
+    },
+    {
+      "_id": "notif-demo-2",
+      "userId": "user-demo-patient",
+      "title": "Queue Active Notice",
+      "message": "Your queue token A-12 is currently in queue. 4 patients ahead of you. Estimated wait: 15 mins.",
+      "type": "QUEUE_UPDATE",
+      "isRead": false,
+      "link": "/queue/appt-demo-1",
+      "createdAt": "2026-09-17T04:09:28.515Z"
+    }
+  ]
+}
